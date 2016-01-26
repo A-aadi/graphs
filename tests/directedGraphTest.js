@@ -76,7 +76,7 @@ describe("paths",function(){
 		assert.deepEqual(['A','B'],path);
 		assert.deepEqual([],g.pathBetween('B','A'));
 	});
-
+	//
 	it("should determine a path between non-adjacent vertices",function(){
 		g.addEdge('A','B');
 		g.addEdge('B','C');
@@ -97,7 +97,7 @@ describe("paths",function(){
 		assert.equal(4,path.length);
 		assert.deepEqual(['A','B','D','E'],path);
 	});
-
+	//
 	it("should determine a path between vertices regardless of order of edge insertion",function(){
 		g.addEdge('A','B');
 		g.addEdge('B','C');
@@ -117,7 +117,7 @@ describe("paths",function(){
 
 		assert.deepEqual([],path);
 	});
-
+	//
 	it("should determine an empty path where no path exists",function(){
 		g.addEdge('A','B');
 		g.addEdge('B','C');
