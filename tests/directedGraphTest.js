@@ -149,7 +149,6 @@ describe("paths",function(){
 
 		assert.deepEqual([],path);
 	});
-	//
 	it("should determine an empty path where no path exists",function(){
 		g.addEdge('A','B');
 		g.addEdge('B','C');
